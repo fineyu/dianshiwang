@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
 </head>
 <body>
     <!-- 头部 -->
@@ -297,7 +297,7 @@
     <!-- 底部 -->
     <div class="footer">
         <div class="code">
-            <img src="img/qr.jpg" alt="">
+            <img src="img/qr.png" alt="">
             <p>扫一扫&nbsp;更多惊喜</p>
         </div>
         <div class="footer_contact">
@@ -313,19 +313,12 @@
         </div>
     </div>
 
-  
-
-
-
-
-
-
-
     <script src="js/index.js"></script>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/unslider.min.js"></script>
     <script src="js/swiper.jquery.min.js"></script>
     <script src="js/swiper.min.js"></script>
+    <!-- 第一个轮播 -->
     <script>
        var swiper1 = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
@@ -334,8 +327,9 @@
         prevButton: '.swiper-button-prev',
         
        });
-    </script>  
-    <script>
+   
+    // <!-- tab栏 -->
+
         $(".tab_con>div").hover(function(){
             $(this).addClass("change").siblings().removeClass("change")
         })
@@ -358,8 +352,9 @@
          $(".tab_con_six").click(function(){
              $(".six").show().siblings().hide();
          })
-    </script>
-    <script>
+   
+    // <!-- 第二个轮播 -->
+    
             var swiper2 = new Swiper('.second', {
               slidesPerView: 3,
               spaceBetween: 30,
@@ -373,10 +368,10 @@
             $('#b02').unslider();
             $('#b01').unslider();
         });
-    </script>
-    <!-- 在线咨询 -->
-    <script>
-        $(".icon").click(function(){
+   
+    // 在线咨询 
+    
+        $(".icon").hover(function(){
             $(".box").toggle();
         })
         $(".dele_icon").click(function(){

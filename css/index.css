@@ -58,7 +58,7 @@
 }
 /* 典型案例 */
 .introduce_con .typical{
-    height: 630px;
+    /* height: 630px; */
     width: 60%;
     background-color: #eaeaea;
     margin:auto;
@@ -68,7 +68,7 @@
 .typical_list{
     float: left;
     width: 32%;
-    height: 48%;
+    height: 300px;
     background-color: #fff;
     margin:7px 5px;
 }

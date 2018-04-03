@@ -1,0 +1,144 @@
+/* banner */
+.page_banner{
+    width: 100%;
+    height: 400px;
+}
+.page_banner img{
+    height: 400px;
+    width: 100%;
+}
+
+/* 内容 */
+.content{
+    width: 60%;
+    /* height: 640px; */
+    margin:auto;
+    overflow: hidden;
+    position: relative;
+    top:-20px;
+    border-radius: 3px;
+}
+.content_left{
+    width:20%;
+    height: 600px;
+    float: left;
+}
+.content_right{
+    width: 80%;
+    /* height: 600px; */
+    float: left;
+    position: relative;
+    background-color: #fff;
+}
+.content_left ul li{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size: 16px;
+}
+.content_left ul li:nth-child(n){
+    background-color: #fff;
+    color:#6d6c6c;
+}
+.content_left ul li:nth-child(2n){
+    background-color: #e9e9e9;
+    color:#838383;
+}
+.tit img{
+    width: 40px;
+    height: 60px;
+}
+.tit a{
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color:#000;
+}
+
+.red{
+    color:#c9565d !important;
+}
+.tit_con{
+    position: absolute;
+    top:20px;
+    left:40px;
+}
+.outline .country{
+    /* text-indent: 2em; */
+    /* height:540px; */
+    border:1px solid rgb(209, 206, 206);
+    border-top:none;
+    overflow: hidden;
+}
+.outline  p{
+    padding:0 25px;
+    padding-bottom: 10px;
+    overflow: auto;
+}
+
+.outline .country .country_con{
+    display:block;
+    width:100%;
+    height: 190px;
+    border-bottom:1px dashed rgb(214, 213, 213);
+    padding:5px;
+    font-size:16px;
+    font-family: "微软雅黑";
+    overflow: hidden;
+}
+
+.outline .country .country_con:last-child{
+    border-bottom:none;
+}
+.con_right{
+    width: 49%;
+    height: 100%;
+    float: left;
+    border-right:1px solid rgb(214, 213, 213);
+}
+.con_right img{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.con_left{
+    width: 49%;
+    height: 100%;
+    float: right;
+}
+.con_left img{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.con_left span{
+    font-family: "微软雅黑";
+    font-size:14px;
+    line-height: 20px;
+    text-indent: 2em;
+    width: 98%;
+    float: right;
+    padding:5px;
+   
+}
+.con_right span{
+    font-family: "微软雅黑";
+    font-size:14px;
+    line-height: 20px;
+    text-indent: 2em;
+    width: 98%;
+    float: right;
+    padding:5px;
+   
+}
+.country_con h3{
+    color:#cc830d;
+}
+.background{
+   background-color: #c9565d !important;
+   color:#fff !important;
+}
+.none{
+    display: none;
+}
