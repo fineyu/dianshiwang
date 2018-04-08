@@ -1,13 +1,42 @@
-// window.onload = function(){
-//     /*650代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;100代表换算比例，这里写100是
-//       为了以后好算,比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/
-//     getRem(650,100)
-// };
-// window.onresize = function(){
-//     getRem(650,100)
-// };
-// function getRem(pwidth,prem){
-//     var html = document.getElementsByTagName("html")[0];
-//     var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
-//     html.style.fontSize = oWidth/pwidth*prem + "px";
-// }
+window.onload = function(){
+            // 第一个轮播图
+    var swiper1 = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        
+        });
+        
+        // 荣誉的轮播  
+        var swiper = new Swiper('.honor', {  
+            loop : true,  
+            pagination: '.swiper-pagination',  
+            effect: 'coverflow',  
+            grabCursor: true,  
+            centeredSlides: true,  
+            nextButton: '.swiper-button-next',  
+            prevButton: '.swiper-button-prev',  
+            slidesPerView: 'auto',  
+            coverflow: {  
+                rotate: 0,// 旋转的角度  
+                stretch: 100,// 拉伸   图片间左右的间距和密集度  
+                depth: 150,// 深度   切换图片间上下的间距和密集度  
+                modifier: 3,// 修正值 该值越大前面的效果越明显  
+                slideShadows : false// 页面阴影效果  
+            }  
+        });     
+
+
+
+        //    点石农村电商扩展
+        var btn=document.querySelector("#click")
+        tap(btn,function(){
+           $(".none").toggle();
+        })
+ 
+        var nav=document.querySelector("#nav")
+        tap(nav,function(){
+           $(".nav_pop").toggle();
+        })
+};

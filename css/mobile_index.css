@@ -1,7 +1,12 @@
+
 header{
     width: 100%;
     height: 0.8rem;
+    /* margin-bottom: 0.8rem; */
     background-color: #383434;
+    position: fixed;
+    top:0;
+    z-index: 1000;
 }
 .header_left{
     width: 30%;
@@ -25,6 +30,7 @@ header{
 .banner{
     width: 100%;
     height: 3rem;
+    margin-top: 0.8rem;
 }
 .swiper-slide img{
     width: 100%;
@@ -76,6 +82,8 @@ header{
     line-height: 0.3rem;
     padding-top: 0.1rem;
     border-bottom: 1px solid rgb(214, 214, 214);
+    border-top: 1px solid rgb(214, 214, 214);
+    background-color:rgb(238, 236, 236);
 }
 .nav_con_header span{
     display: block;
@@ -86,10 +94,11 @@ header{
     float:left;
 }
 .nav_con_header img{
-    width: 0.3rem;
-    height: 0.3rem;
+    width: 0.4rem;
+    height: 0.4rem;
     float:right;
     margin-right: 0.2rem;
+    margin-top: -0.03rem;
 }
 /* 特别推荐 */
 .recommend img{
@@ -112,21 +121,125 @@ header{
 .none{
     display: none;
 }
+
+/* 荣誉轮播图 */
 .honor{
     width: 100%;
     height: 3rem;
-    background-color: palegreen;
-    /* margin-top: 0.3rem; */
-    /* margin: auto; */
-    position: relative;
-    overflow: auto;
-    text-align: center;
+    /* background-color: pink; */
+    margin-top: 0.2rem;
 }
-.awards-con{
-    width:100%;
-    height: 3rem;
-    margin: auto;
-    position: relative;
-    overflow: auto;
+
+.honor .swiper-container {  
+    width: 140%;  
+    padding-top: 0.5rem;  
+}  
+.honor .swiper-slide {  
+    background-position: center;  
+    background-size: 130% 120%;  
+    width:60%;  
+    height: 3rem; 
+}  
+.honor .swiper-slide img {  
+    display: block;  
+    width: 140%;  
+    height:2.8rem; 
+}  
+.honor .swiper-button-next, .swiper-button-prev {  
+    top: 5rem;  
+    width: 10%;  
+    height: 7rem;  
+}  
+.honor .swiper-button-next {  
+    background: url("images/right.png") no-repeat 100% 2.5rem;  
+}  
+.honor .swiper-button-prev {  
+    background: url("images/left.png") no-repeat 0 2.5rem;  
+}  
+.hover_header{
+    width: 100%;
+    height: 0.4rem;
+    line-height: 0.3rem;
+    padding-top: 0.1rem;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    border-top: 1px solid rgb(214, 214, 214);
+    background-color:rgb(238, 236, 236);
+    margin-top: 0.3rem;
+}
+.hover_header span{
+    display: block;
+    height: 80%;
+    margin-left: 0.2rem;
+    padding-left:0.2rem;
+    border-left:3px solid red;
+    float:left;
+}
+
+/* 公司联系方式 */
+.company_way{
+    width:99%;
+    height: 2.2rem;
+    padding:0.25rem;
+}
+.company_qr{
+    width: 35%;
+    height: 100%;
+    float:left;
+}
+.company_details{
+    width: 61%;
+    height: 100%;
+    float: left;
+    padding:0.1rem;
+}
+.company_details p{
+    font-family: "微软雅黑";
+    font-size: 0.26rem;
+    line-height: 0.35rem;
+}
+.copyright{
+    width: 100%;
+    height: 0.7rem;
+    line-height: 0.3rem;
+    background-color: rgb(224, 223, 223);
     text-align: center;
+    margin-top: 0;
+    font-family: "微软雅黑";
+    font-size: 0.2rem;
+    padding-top: 0.1rem;
+}
+
+/* 弹出导航栏 */
+.nav_pop{
+    width: 20%;
+    z-index: 1000;
+    position: fixed;
+    right: 0.1rem;
+    top:0.7rem;
+}
+.nav_pop img{
+    width: 0.4rem;
+    height: 0.4rem;
+    position: fixed;
+    top:0.5rem;
+    right:0.5rem;
+}
+.nav_pop a{
+    display: block;
+    width: 100%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    text-align: center;
+    background-color: rgb(255, 253, 253);
+    border-bottom:0.01rem solid rgb(214, 214, 213);
+    font-family: "微软雅黑";
+    font-size: 0.26rem;
+    color:#000;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-between;
+    flex-direction: column;
 }
